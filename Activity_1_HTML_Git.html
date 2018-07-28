@@ -1,20 +1,112 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Activity 1 HTML Basic Bio</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <h1>My Bio</h1>
-        <h2>Luis Cervantes</h2><br>
-        <img src="/personal_image.jpg" alt="personal image"><br>
-        <p>I was born in Mexico City and I love to code</p>
-        <hr>
+<html lang="en-us">
+
+<head>
+    <!-- Tab title and css style information-->
+    <title>Activity 1 HTML Basic Bio</title>
+    <meta charset="UTF-8">
+    <!--CSS styles declared-->
+    <style>
+        body {
+            background-color: #a50044;
+            color: whitesmoke;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        img {
+            transition: 0.9s;
+            opacity: 0.5;
+            transform: rotate(180deg);
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: scale(1.15);
+            opacity: 1;
+            border: 1px solid white;
+        }
+
+        .Header {
+            background-color: #004d98;
+            text-align: center;
+            color: white;
+            padding: 35px;
+            margin-top: -20px;
+            margin-right: -20px;
+            margin-left: -20px;
+        }
+
+        .textbio {
+            float: left;
+            width:33.3%;
+        }
+        .textp {
+            float: left;
+            width:33.3%;
+            margin-left: -10%;
+            margin-top: -5%;
+            
+        }
+        .contact {
+            float: left;
+            width:33.3%;
+            margin-top: -10%;
+            margin-left: 10%;
+        }
+        h1 {
+            font-size: 50px;
+
+        }
+
+    
+    </style>
+    <!--end of the style tag-->
+</head>
+
+<body>
+    <!--Header division-->
+    <div>
+        <header class="Header">
+            <h1>My Bio</h1>
+        </header>
+    
+    <br>
+    <br>
+    <!--Name division-->
+    <h2>Luis Cervantes</h2>
+    <br>
+    <br>
+    <!--Image section-->
+    <section class="textbio">
+        <img src="personal_image.jpg" width="600px" alt="personal image">
+        <br>
+    </section>
+    <br>
+    <br>
+    <!--Paragraph section-->
+    
+    <p class="textp">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    
+    <br>
+    <br>
+    <!--Contact info section-->
+    <section class="contact">
         <h2>Contact info</h2>
         <ul>
             <li>Cel phone: 5514092906</li>
-            <li>Email: <a href=mailto:"cervants2802@gmail.com">cervants2802@gmail.com</a></li>
+            <li>Email:
+                <a href=mailto: "cervants2802@gmail.com">cervants2802@gmail.com</a>
+            </li>
             <li>Github: lcervantesm</li>
         </ul>
-    </body>
+    </section>
+    </div>
+</body>
+
 </html>
